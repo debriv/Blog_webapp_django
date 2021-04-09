@@ -3,13 +3,13 @@ import pandas as pd
 messages=pd.read_csv('E:/projects/iphoneReview/FilteredData2.csv',sep=",", names=["message","label"])
 
 
-import re
-import nltk
+import re #regular Expression Library Import
+import nltk #natural language toolkit Library Import
 #nltk.download('stopwords')
-from nltk.corpus import stopwords
+from nltk.corpus import stopwords # importing stopwords
 
 from nltk.stem.porter import PorterStemmer
-ps= PorterStemmer()
+ps = PorterStemmer()
 
 corpus = []
 
@@ -22,7 +22,9 @@ for i in range (0,len(messages)):
     review = ' '.join(review)
     corpus.append(review)
 
-
+print(review)
+print(messages['message'][len(messages)-1])
+print ('\n',corpus)
 print(len(corpus))
 
 
