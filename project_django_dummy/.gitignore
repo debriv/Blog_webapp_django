@@ -1,0 +1,5 @@
+/django_dummy/
+/django_dummy/*
+*/__pycache__/
+*/__pycache__/*
+*/migrations/__pycache__/*
